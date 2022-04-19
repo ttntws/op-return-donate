@@ -1,0 +1,9 @@
+.footer-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: row; ;
+    li { padding: .25rem .75rem; position: relative;
+        &:after { content: ''; width: 1px; height: 50%; position: absolute; right: 0; top: 50%; transform: translateY(-50%); bottom: 0; background: $white; }
+        &:first-child { padding-left: 0;}
+        &:last-child { padding-right: 0; 
+            &:after { display: none; }
+        }
+    }
+}

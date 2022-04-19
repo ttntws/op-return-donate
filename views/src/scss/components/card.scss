@@ -1,0 +1,18 @@
+.card {
+    background: #FFFFFF; box-shadow: 0px 39px 16px rgba(38, 96, 164, 0.01), 0px 22px 13px rgba(38, 96, 164, 0.03), 0px 10px 10px rgba(38, 96, 164, 0.04), 0px 2px 5px rgba(38, 96, 164, 0.05), 0px 0px 0px rgba(38, 96, 164, 0.05); border-radius: 10px; padding: rem(12px);
+}
+
+.card-arrow { position: relative;
+    &:after {
+        bottom: 100%; left: 95%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(241, 241, 241, 0); border-bottom-color: $primary; border-width: 14px; margin-left: -14px;
+        @include media-breakpoint-down(md) { left: 90%; }
+    }
+}
+
+.selector:nth-child(even) .card-arrow::after { left: 5%; 
+    @include media-breakpoint-down(md) { left: 10%; }
+}
+
+.donation { 
+    @include media-breakpoint-down(md) { font-size: .85rem; } 
+}

@@ -1,0 +1,75 @@
+// corporate colors
+$accent:							#2660A4;
+$accent-2:							#EDF7F6;
+
+$grey:								#dddddd;
+$grey-text:							#485C75;
+$grey-light-text:					lighten(#485C75, 40%);
+
+$white:								#ffffff;
+$black:								#000000;
+
+// colors
+$primary:							$accent;
+$secondary:							$accent-2;
+
+// paths
+$font-path:							'fonts';
+$image-path:						'images';
+$logo-path:							'#{$image-path}/logos';
+
+// spaces
+$spacer:							1rem;
+$spacers: () !default;
+$spacers: map-merge((
+	5: ($spacer * 2),
+	6: ($spacer * 3),
+	7: ($spacer * 4),
+	8: ($spacer * 5),
+	9: ($spacer * 6),
+	10: ($spacer * 7)
+), $spacers);
+
+// grid columns
+$grid-gutter-width:					rem(32px);
+$grid-gutter-width-sm:				$grid-gutter-width / 2;
+
+// container width
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1340px
+) !default;
+
+// body
+$body-color:						$white;
+
+// links
+$link-color:						$accent;
+
+// fonts
+$font-size-base:					1rem;
+$font-size-sm:						rem(14px);
+$font-size-lg:						rem(22px);
+
+$small-font-size:					$font-size-sm;
+
+$font-size-display-1:				$font-size-base * 5.75;
+
+$font-size-h1: 						$font-size-base * 3;
+$font-size-h2: 						$font-size-base * 1.75;
+$font-size-h3: 						$font-size-base * 1.375;
+$font-size-h4: 						$font-size-base * 1.125;
+$font-size-h5: 						$font-size-base;
+$font-size-h6: 						$font-size-sm;
+
+$font-lineheight-h1:				$font-size-base * 3.75;
+$font-lineheight-h2:				$font-size-base * 2.75;
+$font-lineheight-h3:				$font-size-base * 2.1875;
+$font-lineheight-h4:				$font-size-base * 1.75;
+$font-lineheight-h5:				$font-size-base * 1.5625;
+$font-lineheight-h6:				$font-size-base * 1.375;
+
+// animaton
+$cubicBezier: 						cubic-bezier(0.60, 0.22, 0.70, 0.79);

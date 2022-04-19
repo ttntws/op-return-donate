@@ -1,0 +1,31 @@
+@include font-face('Poppins-Regular', '#{$font-path}/poppins/poppins-regular', 'Poppins Regular' 'Poppins-Regular', normal, 500);
+@include font-face('Poppins-700', '#{$font-path}/poppins/poppins-700', 'Poppins Bold' 'Poppins-700', bold, 700);
+
+h1, .h1 { font-family: 'Poppins-700'; font-weight: 900; font-size: $font-size-h1; line-height: $font-lineheight-h1; margin-bottom: $spacer * 2.5; }
+h2, .h2 { font-family: 'Poppins-700'; font-weight: 900; font-size: $font-size-h2; line-height: $font-lineheight-h2; margin-bottom: $spacer * 2; }
+h3, .h3 { font-family: 'Poppins-700'; font-weight: 900; font-size: $font-size-h3; line-height: $font-lineheight-h3; margin-bottom: $spacer * 1.75; }
+h4, .h4 { font-family: 'Poppins-700'; font-weight: 900; font-size: $font-size-h4; line-height: $font-lineheight-h4; margin-bottom: $spacer * 1.5; }
+h5, .h5 { font-family: 'Poppins-700'; font-weight: 900; font-size: $font-size-h5; line-height: $font-lineheight-h5; margin-bottom: $spacer * 1.25; }
+h6, .h6 { font-family: 'Poppins-700'; font-weight: 900; font-size: $font-size-h6; line-height: $font-lineheight-h6; margin-bottom: $spacer; }
+
+strong, b, .font-weight-bold { font-family: 'Poppins-700'; font-weight: 900; }
+.font-weight-normal { font-family: 'Poppins-Regular'; font-weight: 500; }
+.display-1 { font-size: $font-size-display-1; line-height: 1.05; }
+.text-decoration-none { text-decoration: none !important; }
+
+.text-primary { color: $primary; }
+.text-secondary { color: $secondary; }
+.text-grey { color: $grey-text; }
+.text-grey-light { color: $grey-light-text; }
+
+.font-size-lg { font-size: $font-size-lg; }
+.font-size-sm { font-size: $font-size-sm; }
+
+@include media-breakpoint-down(md) {
+  .display-1 { font-size: $font-size-display-1 / 2.1; line-height: 1.05; }
+}
+
+[data-string] { 
+  text-anchor: start;
+  fill: $primary;
+}

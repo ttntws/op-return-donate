@@ -1,0 +1,11 @@
+
+.img-fluid { max-width: 100%; height: auto; }
+.overflow-hidden { overflow: hidden ;}
+.d-flex, section { flex: 0 0 auto; }
+.rounded { border-radius: rem(10px); }
+.z-index--1 { z-index: -1; }
+.position-relative { position: relative; }
+hr { border-color: rgba(0,0,0,0.1); }
+@for $i from 1 through 3 {
+    .z-index-#{$i} { z-index: $i; }
+}
